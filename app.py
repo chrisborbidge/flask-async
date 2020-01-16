@@ -6,7 +6,6 @@ from time import sleep
 from threading import Thread, Event
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
 
 socketio = SocketIO(app, async_mode=None, logger=True, engineio_logger=True)
 
