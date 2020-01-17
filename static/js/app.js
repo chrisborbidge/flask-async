@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     //connect to the socket server.
-    var socket = io.connect(document.protocol + '//' + document.domain + ':' + location.port + '/random');
+    var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + '/random');
     var numbers_received = [];
 
     //receive details from server
