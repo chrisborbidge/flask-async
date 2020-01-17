@@ -1,12 +1,12 @@
 
 $(document).ready(function(){
     //connect to the socket server.
-    var socket = io.connect('https://' + document.domain + ':' + location.port + '/random');
+    var socket = io.connect(document.protocol + '//' + document.domain + ':' + location.port + '/random');
     var numbers_received = [];
 
     //receive details from server
     socket.on('new_number', function(msg) {
-        console.log("Received number" + msg.number);
+        console.log("Received number " + msg.number);
         //maintain a list of ten numbers
         if (numbers_received.length >= 5){
             numbers_received.shift()
