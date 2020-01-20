@@ -1,4 +1,4 @@
-# flask-async
+# flask-websocket
 
 Long running task, communicating via. websockets, powered by Flask. 
 
@@ -20,7 +20,7 @@ gunicorn app:app
 ### Demo
 
 #### Production
-https://flask-async.onrender.com/
+https://flask-websocket.onrender.com/
 
 #### Development
-https://flask-async-development.onrender.com/
+https://flask-websocket-development.onrender.com/
