@@ -8,13 +8,13 @@ Long running task, communicating via. websockets, powered by Flask.
 ```
 python -m venv .venv
 pip install -r "requirements.txt"
-python3 app.py
+python3 application.py
 ```
 
 #### Production
 ```
 pip install -r "requirements.txt"
-gunicorn app:app
+gunicorn application:app
 ```
 
 ### Demo
