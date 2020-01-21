@@ -25,6 +25,11 @@ def generate_random_number():
         socketio.sleep(5)
 
 
+@app.route("/health")
+def health():
+    return "Healthy!"
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
