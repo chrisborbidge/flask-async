@@ -18,11 +18,3 @@ python3 application.py
 pip install -r "requirements.txt"
 gunicorn application:app
 ```
-
-### Demo
-
-#### Production
-https://flask-websocket.onrender.com/
-
-#### Development
-https://flask-websocket-development.onrender.com/
